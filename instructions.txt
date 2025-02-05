@@ -1,0 +1,22 @@
+##Change init to form main branch insea of master
+git config --global init.defaultBranch main
+
+##Follow this for creating and pushing from remote
+https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely
+
+##UV
+uv python install 3.12
+uv init -p 3.12 git-learn ##Initiate a UV project
+cd git-learn
+
+##Some changes from the link
+git init
+git remote add origin <https link>
+
+git add --all ##Add changes
+git commit -m "Message"
+
+git remote set-url origin https://PAT@github.com/..
+git push -u origin main ##Set upstream to main
+
+##This blog can be useful too https://melix.github.io/blog/2020/06/updating-git.html#:~:text=Configuring%20git%20init,to%20set%20it%20up%20differently.&text=Starting%20from%20now%2C%20calling%20git,main%20branch%20instead%20of%20master%20!
